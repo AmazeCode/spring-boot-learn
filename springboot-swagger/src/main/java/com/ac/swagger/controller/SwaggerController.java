@@ -2,6 +2,7 @@ package com.ac.swagger.controller;
 
 import com.ac.swagger.ao.PersonAo;
 import io.swagger.annotations.*;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -13,9 +14,9 @@ import org.springframework.web.bind.annotation.RestController;
  * @Date: 2020/7/22 0022 下午 8:52
  * @version: V1.0
  */
-@Api(tags = "HelloWorld接口")
+@Api(tags = "Swagger使用Demo接口")
 @RestController
-public class HelloController {
+public class SwaggerController {
 
     @ApiOperation("Hello World Spring Boot 方法")
     @ApiResponses({@ApiResponse(code=200,message="响应视图封装详见String")})

@@ -10,7 +10,7 @@ import lombok.Data;
  * @Date: 2020/7/22 0022 下午 9:02
  * @version: V1.0
  */
-@ApiModel("HelloWorld请求参数")
+@ApiModel("Swagger请求参数")
 @Data
 public class PersonAo {
 
