@@ -10,6 +10,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>springboot-swagger</module>
+        <module>springboot-jpa</module>
     </modules>
 
     <!-- 父jar通用版本管理 -->
