@@ -11,8 +11,8 @@
 	<groupId>com.ac.jpa</groupId>
 	<artifactId>springboot-jpa</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>springboot-swagger</name>
-	<description>swagger</description>
+	<name>springboot-jpa</name>
+	<description>jpa</description>
 
 	<properties>
 		<java.version>1.8</java.version>
