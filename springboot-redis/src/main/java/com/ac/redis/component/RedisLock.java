@@ -16,10 +16,17 @@ import java.util.concurrent.TimeUnit;
 @Component
 public class RedisLock {
 
-    /********************************初级锁 开始***************************************/
+
     @Autowired
     private StringRedisTemplate redisTemplate;
 
+    /**
+     * @Description 初级锁
+     * @params [key, value]
+     * @return boolean
+     * @author zhangyadong
+     * @date 2020/8/8 12:36
+     */
     public boolean lock(String key, String value) {
         return redisTemplate.opsForValue().setIfAbsent(key, value);
     }
@@ -27,7 +34,7 @@ public class RedisLock {
     public void unLock(String key) {
         redisTemplate.delete(key);
     }
-    /********************************初级锁 结束***************************************/
+
 
 
     /******************************** 版本2锁 开始

@@ -18,13 +18,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class RedisController {
 
-    // 配置 StringRedisTemplate,交给spring管理，SpringRedisTemplate 实现了RedisTemplate，RedisTemplate 默认是采用 JDK 的序列化方式来转换对象的
-    @Bean
-    public StringRedisTemplate stringRedisTemplate(RedisConnectionFactory redisConnectionFactory) {
-        StringRedisTemplate stringRedisTemplate = new StringRedisTemplate(redisConnectionFactory);
-        return stringRedisTemplate;
-    }
-
     @Autowired
     private StringRedisTemplate stringRedisTemplate;
 
